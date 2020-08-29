@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Let's Go Trivia</title>
+</head>
+<link rel="stylesheet" href="index.css">
+<body>
+  <header id="header">
+      <h1 id="heading">Let's Go Trivia</h1>
+  </header>
+   <section class="container">
+     <form  action="quiz.html" class="form">
+          <fieldset>
+             <legend>Select Category</legend>
+               <p>
+                  <select id = "myCategories">
+                  </select>
+              </p>
+        </fieldset>
+        <fieldset>
+           <legend>Select Difficulty</legend>
+             <p>
+                <label></label>
+                <select id = "myDifficulty">
+                  <option value = "10" class="box">Easy</option>
+                  <option value = "20" class="box">Medium</option>
+                  <option value = "30" class="box">Hard</option>
+                </select>
+            </p>
+      </fieldset>
+        <fieldset>
+           <legend>Select number of Questions</legend>
+             <p>
+                <label></label>
+                <select id = "myQuestions">
+                  <option value = "10" class="box">10</option>
+                  <option value = "20" class="box">20</option>
+                  <option value = "30" class="box">30</option>
+                  <option value = "40" class="box">40</option>
+                  <option value = "50" class="box">50</option>
+                </select>
+            </p>
+      </fieldset>
+      <button class="btn" onclick="getChoices()">Start!</button>
+     </form>
+  </section>
+  <footer id="footer">
+    <p>Have a Good Day</p>
+  </footer>
+  <script src="index.js"></script>
+</body>
+</html>
